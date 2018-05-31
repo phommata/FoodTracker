@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eWA-mm-V2T">
-                                <rect key="frame" x="0.0" y="40" width="375" height="424.5"/>
+                                <rect key="frame" x="0.0" y="40" width="375" height="482.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9nv-bM-K8k">
                                         <rect key="frame" x="0.0" y="0.0" width="86.5" height="20.5"/>
@@ -51,6 +51,9 @@
                                             <outletCollection property="gestureRecognizers" destination="nST-1h-gNT" appends="YES" id="3dg-sC-Tut"/>
                                         </connections>
                                     </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="l2v-70-99N" customClass="RatingControl" customModule="FoodTracker">
+                                        <rect key="frame" x="0.0" y="432" width="252" height="50"/>
+                                    </stackView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="2xG-TL-T4U" secondAttribute="trailing" id="78M-pI-0Ny"/>
@@ -68,7 +71,8 @@
                     <connections>
                         <outlet property="mealNameLabel" destination="9nv-bM-K8k" id="Sl6-f2-qzA"/>
                         <outlet property="nameTextField" destination="2xG-TL-T4U" id="T6E-X8-MTX"/>
-                        <outlet property="photoImageView" destination="LSw-ry-Hg5" id="LsO-1y-d6l"/>
+                        <outlet property="photoImageView" destination="l2v-70-99N" id="bD3-25-AaZ"/>
+                        <outlet property="ratingControl" destination="l2v-70-99N" id="odr-l4-mF0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
